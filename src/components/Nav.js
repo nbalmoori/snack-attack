@@ -25,7 +25,7 @@ class Nav extends Component {
         <input
           className='searchBar'
           type='text'
-          placeholder='search for something'
+          placeholder='what are you craving?'
           name='search'
           onChange={event => this.handleChange(event)}
         />

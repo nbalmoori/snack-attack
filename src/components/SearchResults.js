@@ -50,10 +50,15 @@ class SearchResults extends Component {
     .catch(err => console.log(err))
   }
 
+  clearSearch = () => {
+    this.setState({searchResults: ""})
+  }
+
   render = () => {
     return (
       <section className='searchResults'>
         <h1>{this.state.searchResults}</h1>
+        {this.state.searchResults && <button onClick={event => this.clearSearch(event)}>Clear Search</button>}
       </section>
     )
   }

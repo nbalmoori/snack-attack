@@ -16,7 +16,7 @@ class Nav extends Component {
   submitSearch = (event) => {
     event.preventDefault()
     const newSearch = this.state.userInput
-    this.props.displaySearchResults(newSearch)
+    this.props.getSearchResults(newSearch)
   };
 
   render = () => {

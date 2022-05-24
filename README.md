@@ -15,7 +15,7 @@ The spec for this project can be found [here](https://docs.google.com/document/d
 
 ## Set Up
 1. Clone this repo to your local machine.
-2. cd into your local directory.
-3. Run npm install.
-4. Run npm start.
+2. `cd` into your local directory.
+3. Run `npm install`.
+4. Run `npm start`.
 5. Enjoy exploring the application!

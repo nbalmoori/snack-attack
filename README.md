@@ -13,6 +13,12 @@ The spec for this project can be found [here](https://docs.google.com/document/d
 - CSS
 - Fetch API
 
+## Application in Action
+
+![snack_attack_giphy](https://user-images.githubusercontent.com/95309774/170163769-406fc667-4cff-44ce-a42a-71f6e2e7d5c2.gif)
+
+A user can search for the type of food they are craving, and if they change their mind, they can clear results and try again.
+
 ## Set Up
 1. Clone this repo to your local machine.
 2. `cd` into your local directory.

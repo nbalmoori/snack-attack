@@ -3,5 +3,10 @@ main {
 }
 
 header {
-  font-size: 4em;
+  font-size: 5em;
+  padding-top: 2%;
+}
+
+button {
+  color: black;
 }

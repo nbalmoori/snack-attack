@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../styling/App.css';
-import Nav from './Nav'
-import SearchResults from './SearchResults'
+import Nav from './Nav';
+import SearchResults from './SearchResults';
 
 class App extends Component {
   constructor() {
@@ -9,8 +9,8 @@ class App extends Component {
     this.state = {
       userSearch: "",
       searchResults: ""
-    }
-  }
+    };
+  };
 
   getSearchResults = (search) => {
     const data = {
@@ -27,7 +27,7 @@ class App extends Component {
       top_p: 1.0,
       frequency_penalty: 0.0,
       presence_penalty: 0.0,
-    }
+    };
 
     fetch("https://api.openai.com/v1/engines/text-curie-001/completions", {
       method: "POST",
@@ -49,11 +49,12 @@ class App extends Component {
       this.setState({searchResults: data})
     })
     .catch(err => console.log(err))
-  }
+  };
 
   clearResults = () => {
-    this.setState({searchResults: ""})
-  }
+    this.setState({searchResults: ""});
+    this.setState({userSearch: ""});
+  };
 
   render = () => {
     return (
@@ -62,8 +63,8 @@ class App extends Component {
         <Nav getSearchResults={this.getSearchResults}/>
         {this.state.searchResults && <SearchResults searchResults={this.state.searchResults} clearResults={this.clearResults} />}
       </main>
-    )
-  }
-}
+    );
+  };
+};
 
 export default App;

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../styling/SearchResults.css'
+import '../styling/SearchResults.css';
 
 const SearchResults = ({searchResults, clearResults}) => {
   return (
@@ -7,7 +7,7 @@ const SearchResults = ({searchResults, clearResults}) => {
       <h1>{searchResults}</h1>
       <button onClick={() => clearResults()}>Clear Search</button>
     </section>
-  ) 
-}
+  ); 
+};
 
 export default SearchResults;

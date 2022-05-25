@@ -1,0 +1,10 @@
+.searchBar {
+  color: black;
+  margin-top: 1%;
+  width: 350px;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
